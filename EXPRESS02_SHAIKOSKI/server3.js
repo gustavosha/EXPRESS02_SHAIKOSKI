@@ -23,9 +23,13 @@ app.get('/ola/:nome/:empresa',(req,res)=>{
 })
 
 //Rota com soma de dois parâmetros
-app.get('/soma/:a/:b', (req, res) => {
-    const a = parseInt(req.params.a);
-    const b = parseInt(req.params.b);
-    const soma = a + b;
-    res.send('O resultado da soma de ' + a + ' e ' + b + ' é: ' + soma);
-});
+app.get('/soma/:a/:b',(req,res)=>{
+    res.send('O resultado da soma de: '+req.params.a+' é
+    
+    
+    
+    
+    
+    
+    '+ req.params.b+ ' e: '+(parseInt(req.params.b)))
+})
